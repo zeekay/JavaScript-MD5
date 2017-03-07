@@ -22,6 +22,10 @@
     "type": "git",
     "url": "git://github.com/zeekay/es-md5.git"
   },
+  "main": "dist/md5.js",
+  "module": "dist/md5.mjs",
+  "js:next": "dist/md5.mjs",
+  "files": ["dist"],
   "license": "MIT",
   "devDependencies": {
     "cake-publish": "0.1.5",
@@ -38,11 +42,5 @@
     "test": "npm run lint && npm run unit",
     "build": "cake build",
     "preversion": "npm test"
-  },
-  "main": "js/md5.js",
-  "module": "js/md5.mjs",
-  "js:next": "js/md5.mjs",
-  "files": [
-    "js"
-  ]
+  }
 }
