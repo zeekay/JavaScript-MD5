@@ -1,6 +1,6 @@
 {
   "name": "es-md5",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "title": "JavaScript MD5",
   "description": "Module-friendly fork of [JavaScript MD5](https://github.com/blueimp/JavaScript-MD5). MD5 implementation. Compatible with server-side environments like Node.js, module loaders like RequireJS, Browserify or webpack and all web browsers.",
   "keywords": [
