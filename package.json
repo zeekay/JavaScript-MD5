@@ -1,13 +1,13 @@
 {
-  "name": "blueimp-md5",
+  "name": "es-md5",
   "version": "2.7.0",
   "title": "JavaScript MD5",
-  "description": "JavaScript MD5 implementation. Compatible with server-side environments like Node.js, module loaders like RequireJS, Browserify or webpack and all web browsers.",
+  "description": "Module-friendly fork of [JavaScript MD5](https://github.com/blueimp/JavaScript-MD5). MD5 implementation. Compatible with server-side environments like Node.js, module loaders like RequireJS, Browserify or webpack and all web browsers.",
   "keywords": [
     "javascript",
     "md5"
   ],
-  "homepage": "https://github.com/blueimp/JavaScript-MD5",
+  "homepage": "https://github.com/zeekay/es-md5",
   "author": {
     "name": "Sebastian Tschan",
     "url": "https://blueimp.net"
@@ -20,14 +20,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/blueimp/JavaScript-MD5.git"
+    "url": "git://github.com/zeekay/es-md5.git"
   },
   "license": "MIT",
   "devDependencies": {
+    "cake-publish": "0.1.5",
+    "cake-test": "0.1.0",
+    "cake-version": "0.1.9",
     "chai": "3.5.0",
     "mocha": "3.1.0",
     "standard": "8.3.0",
-    "uglify-js": "2.7.3"
+    "uglify-js": "2.8.7"
   },
   "scripts": {
     "lint": "standard js/*.js test/*.js",
@@ -38,5 +41,10 @@
     "version": "npm run build && git add -A js",
     "postversion": "git push --tags origin master master:gh-pages && npm publish"
   },
-  "main": "js/md5.js"
+  "main": "js/md5.js",
+  "module": "js/md5.mjs",
+  "js:next": "js/md5.mjs",
+  "files": [
+    "js"
+  ]
 }

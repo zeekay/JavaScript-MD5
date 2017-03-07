@@ -1,5 +1,3 @@
-'use strict';
-
 var binl2rstr;
 var binlMD5;
 var bitRotateLeft;
@@ -250,4 +248,4 @@ var index = md5 = function(string, key, raw) {
   return rawHMACMD5(key, string);
 };
 
-module.exports = index;
+export default index;
