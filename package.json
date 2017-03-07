@@ -36,10 +36,8 @@
     "lint": "standard js/*.js test/*.js",
     "unit": "mocha",
     "test": "npm run lint && npm run unit",
-    "build": "cd js && uglifyjs md5.js -c -m -o md5.min.js --source-map md5.min.js.map",
-    "preversion": "npm test",
-    "version": "npm run build && git add -A js",
-    "postversion": "git push --tags origin master master:gh-pages && npm publish"
+    "build": "cake build",
+    "preversion": "npm test"
   },
   "main": "js/md5.js",
   "module": "js/md5.mjs",
